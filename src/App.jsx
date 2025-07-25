@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="bg-white min-h-screen flex items-center justify-center font-sans w-full">
-      <div className="w-full max-w-4xl h-[75vh] flex flex-col bg-white rounded-lg">
+      <div className="w-full max-w-4xl h-[80vh] flex flex-col bg-white rounded-lg">
         <ChatWindow messages={messages} isLoading={isLoading} error={error} />
         {messages.length === 0 && <SuggestedPrompts onPromptClick={handleSuggestedPrompt} />}
         <MessageInput onSendMessage={sendMessage} isLoading={isLoading} />

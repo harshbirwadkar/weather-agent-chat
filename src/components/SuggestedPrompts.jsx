@@ -14,7 +14,7 @@ const SuggestedPrompts = ({ onPromptClick }) => {
           <button
             key={index}
             onClick={() => onPromptClick(prompt)}
-            className="bg-white border border-gray-200 text-gray-700 text-base rounded-xl px-4 py-2 hover:bg-gray-50 transition-colors duration-200 max-w-sm text-right"
+            className=" border border-gray-200 text-gray-500 text-lg rounded-xl px-4 py-5 bg-gray-50 hover:bg-gray-100 transition-colors duration-200 max-w-[70%] text-right"
           >
             {prompt}
           </button>

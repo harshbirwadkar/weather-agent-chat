@@ -22,7 +22,7 @@ const MessageInput = ({ onSendMessage, isLoading }) => {
   return (
     <div className="p-4 bg-white">
       <form onSubmit={handleSubmit}>
-        <div className="flex items-end p-3 bg-gray-100 rounded-xl focus-within:ring-2 focus-within:ring-gray-300 transition-shadow duration-200 shadow-lg min-h-24">
+        <div className="flex items-end p-3 border-2 border-gray-100 rounded-2xl focus-within:ring-2 focus-within:ring-gray-300 transition-shadow duration-200 shadow-lg min-h-24">
           <TextareaAutosize
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
@@ -30,7 +30,7 @@ const MessageInput = ({ onSendMessage, isLoading }) => {
             minRows={1}
             maxRows={7}
             disabled={isLoading}
-            className="flex-grow p-0 pr-3 bg-transparent border-none focus:outline-none focus:ring-0 resize-none min-h-24"
+            className="flex-grow text-lg p-0 pr-3 bg-transparent border-none focus:outline-none focus:ring-0 resize-none min-h-24"
             style={{ lineHeight: '24px' }}
           />
           <button
